@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -f /usr/include/audio/Alib.h ]
+then
+	# 9.X
+	ln -s /usr/include/audio/Alib.h .
+else
+	# 10.x
+	ln -s /opt/audio/include/Alib.h .
+fi

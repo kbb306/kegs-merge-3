@@ -1,0 +1,4 @@
+    *  possibility to paste text to the emulator (on X11 and possibly Win32)
+    * disk swapping facility (probably OS-specific too, possibly drag'n'drop).
+    * support for keyboards other than QWERTY (like the infamous French keyboard).
+

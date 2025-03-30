@@ -1,0 +1,36 @@
+OBJECTS = $(OBJECTS1) engine_c.o
+#CC = /usr/local/gcc-3.0/bin/gcc
+CC = gcc
+#CCOPTS = -O6 -mcpu=pentium -DNDEBUG
+CCOPTS = -g -Wall
+OPTS =  -DKEGS_LITTLE_ENDIAN -DHAVE_SDL `sdl-config --cflags` -DX_SHARED_MEM
+EXTRA_LIBS = `sdl-config --libs` -lXext -lX11 -lm
+#LDFLAGS = -s
+LDFLAGS =
+SDL_HOME = /proj/chir/home
+XOPTS = -I/usr/X11R6/include
+XLIBS = -L/usr/X11R6/lib
+# AS = /usr/local/gcc-3.0/bin/gcc
+AS = gcc
+PERL = perl
+SUFFIX =
+NAME = kegs
+LDOPTS =
+LD = $(CC)
+EXTRA_SPECIALS =
+
+
+# SDL-only build
+# -D__MSVCRT__ because of a gcc bug on win32 (doesn't hurt others)
+# <http://sources.redhat.com/ml/cygwin/2001-02/msg01157.html>
+OPTS =  -DKEGS_LITTLE_ENDIAN -DHAVE_SDL `sdl-config --cflags` -DDISABLE_VIDEO_X11 -DDISABLE_VIDEO_WIN32 -DDISABLE_SOUND_NATIVE -DDISABLE_JOYSTICK_NATIVE -D__MSVCRT__
+EXTRA_LIBS = `sdl-config --libs`
+
+# windows with native sound
+#OPTS =  -DKEGS_LITTLE_ENDIAN -DHAVE_SDL `sdl-config --cflags` -DDISABLE_VIDEO_X11 -DDISABLE_VIDEO_WIN32 -DDISABLE_JOYSTICK_NATIVE -D__MSVCRT__
+#EXTRA_LIBS = `sdl-config --libs` -lwinmm
+# `sdl-config --libs` -lXext -lX11 -lwinmm -lcomctl32 -lwsock32
+
+XOPTS =
+XLIBS =
+

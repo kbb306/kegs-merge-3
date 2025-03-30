@@ -1,0 +1,153 @@
+
+NOTE: The build process changed as of KEGS v0.50!
+
+General build instructions:
+--------------------------
+
+You need to build with a make utility.  I've only tested GNU make.
+There's a default Makefile, which should work for nearly any environment.
+The Makefile includes a file called "vars" which defines the platform-
+dependent variables.  You need to make vars point to the appropriate
+file for your machine.
+
+This makes my maintenance of the diverse platforms a bit easier.
+
+HP "Assembly" build instructions (the default):
+--------------------------------
+
+KEGS is easy to compile.  Just cd to the src directory and type "make".
+KEGS requires perl to be in your path (or just edit the vars file to give
+the full path to wherever you installed perl).  Perl version 4 or 5 is
+fine.
+
+After the "make" has finished, it will create three executables:  kegs,
+partls, and to_pro.  Just move them to where you want to put executables,
+which is usually in the previous directory level.
+
+If you get an error like 'as not found' under HPUX, make sure /usr/ccs/bin
+is in your $PATH.
+
+I build KEGS using a complex build process, so the provided Makefile
+is not what I use to build KEGS, and so lacks some of the usual makefile
+niceties.  Sorry.  It does get the job done, though.
+
+If you compile on pre-10.X versions of HP-UX, you may have to edit
+the engine_s.s file to delete the line ".level 1.1".  I'll see if I can
+make this more seamless in the future.
+
+HP "C" build instructions:
+-------------------------
+
+If you want to try the C version of KEGS (about a factor of two slower),
+you need to use the vars_c:
+
+rm vars; ln -s vars_c vars
+make
+
+This vars file uses gcc and compiles in about 2-3 minutes.  It takes over
+2 hours and 650MB to compile with HP's C compiler.  I'm working on
+getting this fixed.
+
+
+X86 Linux build instructions:
+----------------------------
+
+Use the vars_x86linux file with:
+
+rm vars; ln -s vars_x86linux vars
+make
+
+KEGS assumes perl is in your path. If it is somewhere else, you need to edit
+the "PERL = perl" line in the vars file and make it point to the correct place.
+
+Audio is currently disabled by default, but you can try turning it on
+by runnning "kegs -audio 1".
+
+A user recommends using "egcs -O6 -mpentium" for the best performance.
+
+PowerPC Linux build instructions:
+----------------------------
+
+Use the vars_linuxppc vars file by:
+
+rm vars; ln -s vars_linuxppc vars
+make
+
+KEGS assumes perl is in your path. If it is somewhere else, you need to edit
+the "PERL = perl" line in the vars file and make it point to the correct place.
+
+Audio is currently disabled by default, but you can try turning it on
+by runnning "kegs -audio 1".  It sounds horrible to me, but sounds do
+come out.
+
+Solaris SPARC build instructions:
+--------------------------------
+
+Use the vars_solaris vars file by:
+
+rm vars; ln -s vars_solaris vars
+make
+
+KEGS assumes perl is in your path. If it is somewhere else, you need to edit
+the "PERL = perl" line in the vars file and make it point to the correct place.
+
+Audio is currently disabled by default, but you can try turning it on
+by runnning "kegs -audio 1".
+
+Solaris x86 build instructions:
+--------------------------------
+
+Use the vars_x86solaris vars file by:
+
+rm vars; ln -s vars_x86solaris vars
+make
+
+KEGS assumes perl is in your path. If it is somewhere else, you need to edit
+the "PERL = perl" line in the vars file and make it point to the correct place.
+
+Audio is currently disabled by default, but you can try turning it on
+by runnning "kegs -audio 1".
+
+
+IBM OS/2 Warp + XFREE86-OS2 3.3.2 build instructions :
+------------------------------------------------------
+
+Doing this :
+
+del vars
+ren vars_os2 vars
+make
+
+KEGS requires PERL 5.0 installed, and assumes perl is in D:/BIN/PERL/PERL5X.
+If it is somewhere else, you need to edit the PERL variable in the vars file
+to point to the correct place. 
+
+KEGS also requires HPFS or ext2fs filesystem. KEGS *doesn't* work on FAT file
+systems.  (A user reported this, I don't know why that is).
+
+Audio is currently disabled, and serial port emulation is also disabled.
+The F1 is like the Esc key, because the combination of Ctrl-Esc, Ctrl-Alt-Esc
+causes desktop switching.
+
+Thanks to Tschopp Gilles for the port.  I mucked with his changes, so
+if anything doesn't work, it's my fault.
+
+Other platform "C" build instructions:
+-------------------------------------
+
+I don't know--you tell me.  If you are porting to an X-windows and
+Unix-based machine, it should be easy.  Start with vars_x86linux if
+you are a little-endian machine, or vars_linuxppc if you are big
+endian.  Don't define -DKEGS_LITTLE_ENDIAN unless your processor is
+little-endian (x86, Alpha).  Sun, MIPS, HP, Motorola, and IBM are
+big-endian.
+
+If you want to port to a non-X-Windows environment, you'll need to
+rewrite xdriver.c and sound_driver.c.  You'll probably have
+to make changes to scc_driver.h (BSD sockets) and smartport.c (Unix file
+handling).  clock.c assumes gettimeofday() is accurate and fast, and
+also uses select() for a microsecond sleep operation.
+
+Looking over INTERNALS.overview and INTERNALS.xdriver should help with
+any ports.
+

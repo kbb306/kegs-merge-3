@@ -1,0 +1,17 @@
+
+OBJECTS = $(OBJECTS1) engine_c.o
+CC = gcc -pipe
+CCOPTS = -O2 -m486 -Wall
+OPTS =  -DNDEBUG -DKEGS_LITTLE_ENDIAN -D__MT__ -malign-double
+SUFFIX = .exe
+NAME = kegs
+LDFLAGS =
+LDOPTS =
+LD = $(CC)
+EXTRA_LIBS = kegsos2.def -lXext -lX11 -lshm -lsocket -s -Zmtd
+EXTRA_SPECIALS =
+
+XOPTS = -I%X11ROOT%/XFree86/include
+XLIBS = -L%X11ROOT%/XFree86/lib
+PERL = D:/BIN/PERL/PERL5X
+

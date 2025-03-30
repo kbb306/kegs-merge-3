@@ -1,0 +1,19 @@
+
+OBJECTS = $(OBJECTS1) engine_c.o
+CC = cc
+CCOPTS = -O
+OPTS =  -DNDEBUG -DSOLARIS
+SUFFIX =
+NAME = kegs
+LDFLAGS =
+LDOPTS =
+LD = $(CC)
+EXTRA_LIBS = -lXext -lX11 -lsocket -lnsl
+EXTRA_SPECIALS =
+
+AS = cc
+PERL = perl
+
+XOPTS = -I/usr/X/include
+XLIBS = -L/usr/X/lib
+

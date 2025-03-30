@@ -1,0 +1,37 @@
+# Paths to images for KEGS
+
+#s6d1 = dos33.dsk
+#s6d2 = another.dsk
+#s6d1 = games/choplifter+.dsk
+#s6d1 = wp/Prosel.dsk
+
+#s5d1 = XMAS_DEMO
+#s5d2 = another_35_image
+
+#s7d1 = NUCLEUS03
+#s7d2 = SAMPLE_IMAGE
+
+#s7d1 = GSOS
+#s7d3,1440 = /dev/rfloppy/c20Ad1s0
+#s7d5 = /dev/dsk/c201d2s0:2
+#s7d6 = /dev/dsk/c201d2s0:GO-Main
+#s7d7 = /dev/dsk/c201d2s0:GO-Misc16bit
+#s7d8 = /dev/dsk/c201d2s0:GO-Programming
+#s7d9 = /dev/dsk/c201d2s0:GO-Disks
+#s7d10 = /dev/dsk/c201d2s0:GO-Applications
+#s7d11 = /dev/dsk/c201d2s0:GO-G.S.
+
+#s7d1 = GSOS1.2MG
+#s7d2 = POOF1
+#s7d3 = GSOS2.2MG
+#s7d4 = GSOS3.2MG
+#s7d5 = GSOS4.2MG
+#s7d6 = GSOS5.2MG
+#s7d7 = GSOS6.2MG
+#s7d8 = GSOS7.2MG
+
+s7d1 = POOF1
+s7d2 = POOF2
+#s6d1 = wp/AW5PA.dsk
+#s6d2 = wp/AW5PF.dsk
+#s6d1 = games/David's_Midnight_Magic.dsk

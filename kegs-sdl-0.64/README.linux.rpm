@@ -1,0 +1,64 @@
+
+KEGS: Kent's Emulated GS version 0.56
+http://www.psn.net/~kentd/kegs/
+
+This readme is for those of you interested in using the RPM version of
+KEGS.
+
+
+HOW TO INSTALL THE KEGS RPM
+---------------------------
+
+If you are installing KEGS from RPM for the first time, do this:
+
+1. su
+2. rpm -i kegs-0.56-1.i386.rpm 
+
+If you've previously installed an RPM version of KEGS and want to upgrade 
+to the latest version, use
+
+1. su
+2. rpm -U kegs-0.56-1.i386.rpm
+
+
+DISK AND ROM IMAGES
+-------------------
+
+REMEMBER: YOU STILL NEED A ROM IMAGE AND DISK IMAGES
+
+The rpm version of kegs, like the source distribution, does NOT come
+with disk images or with a ROM image.
+
+When you run kegs, kegs will look for a ROM file and a disk_conf file in
+the current working directory.  More information about ROM and disk images 
+can be found in the README.kegs file.
+
+The default KEGS disk_conf file that comes with the source distribution
+can be found here after installing the RPM:
+ 
+/usr/doc/kegs-0.56/disk_conf 
+
+
+WHERE DO THINGS GET INSTALLED?
+------------------------------
+
+You can get a list of where files are placed using
+rpm -qil kegs
+
+The result will look something like this:
+
+/usr/bin/dc2raw
+/usr/bin/kegs
+/usr/bin/partls
+/usr/bin/to_pro
+/usr/bin/xgs2raw
+/usr/doc/kegs-0.56
+/usr/doc/kegs-0.56/CHANGES
+/usr/doc/kegs-0.56/INTERNALS.iwm
+/usr/doc/kegs-0.56/INTERNALS.overview
+/usr/doc/kegs-0.56/INTERNALS.xdriver
+/usr/doc/kegs-0.56/README.kegs
+/usr/doc/kegs-0.56/README.linux.partitions
+/usr/doc/kegs-0.56/README.linux.rpm
+/usr/doc/kegs-0.56/disk_conf
+
