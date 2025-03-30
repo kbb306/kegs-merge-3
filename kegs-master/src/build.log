@@ -1,0 +1,1446 @@
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. sdl_driver.c
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Pc_log’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:90:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Pc_log) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:90:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Pc_log) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Data_log’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:100:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Data_log) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:100:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Data_log) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Event’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:107:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Event) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:107:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Event) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Fplus’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:113:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Fplus) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:113:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Fplus) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Engine_reg’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:120:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Engine_reg) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:120:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Engine_reg) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Kimage’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:136:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Kimage) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:136:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Kimage) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Page_info’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:149:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Page_info) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:149:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Page_info) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Cfg_menu’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:153:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_menu) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:153:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_menu) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Cfg_dirent’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:161:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_dirent) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:161:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_dirent) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Cfg_listhdr’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:169:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_listhdr) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:169:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_listhdr) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Emustate_intlist’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:181:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_intlist) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:181:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_intlist) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Emustate_dbllist’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:186:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_dbllist) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:186:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_dbllist) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Emustate_word32list’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:191:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_word32list) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+defc.h:191:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_word32list) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Trk’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:27:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Trk) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+iwm.h:27:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Trk) {
+ ^~~~~~
+In file included from defc.h:314:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+iwm.h:37:8: error: redefinition of ‘struct _Disk’
+ struct _Disk {
+        ^~~~~
+In file included from defc.h:314:0,
+                 from sdl_driver.c:12:
+iwm.h:25:16: note: originally defined here
+ typedef struct _Disk Disk;
+                ^~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Iwm’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:63:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Iwm) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+iwm.h:63:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Iwm) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Driver_desc’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:86:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Driver_desc) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+iwm.h:86:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Driver_desc) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: error: redefinition of ‘struct _Part_map’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:96:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Part_map) {
+ ^~~~~~
+In file included from sdl_driver.c:12:0:
+defc.h:17:34: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                  ^
+iwm.h:96:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Part_map) {
+ ^~~~~~
+In file included from sdl_driver.c:15:0:
+video.h:23:0: warning: "EFF_BORDER_WIDTH" redefined
+ #define EFF_BORDER_WIDTH (BORDER_WIDTH + BORDER_CENTER_X)
+ 
+In file included from defc.h:15:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defcomm.h:146:0: note: this is the location of the previous definition
+ #define EFF_BORDER_WIDTH (BORDER_WIDTH + (640-560))
+ 
+In file included from sdl_driver.c:15:0:
+video.h:32:0: warning: "A2_WINDOW_WIDTH" redefined
+ #define A2_WINDOW_WIDTH  (640 + A2_BORDER_LEFT + A2_BORDER_RIGHT)
+ 
+In file included from defc.h:15:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defcomm.h:155:0: note: this is the location of the previous definition
+ #define A2_WINDOW_WIDTH  640
+ 
+In file included from sdl_driver.c:15:0:
+video.h:33:0: warning: "A2_WINDOW_HEIGHT" redefined
+ #define A2_WINDOW_HEIGHT (400 + A2_BORDER_TOP + A2_BORDER_BOTTOM)
+ 
+In file included from defc.h:15:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defcomm.h:156:0: note: this is the location of the previous definition
+ #define A2_WINDOW_HEIGHT 400
+ 
+In file included from sdl_driver.c:15:0:
+video.h:96:6: error: conflicting types for ‘video_init’
+ void video_init(int);
+      ^~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:482:6: note: previous declaration of ‘video_init’ was here
+ void video_init(void);
+      ^~~~~~~~~~
+In file included from defc.h:15:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+defcomm.h:146:0: warning: "EFF_BORDER_WIDTH" redefined
+ #define EFF_BORDER_WIDTH (BORDER_WIDTH + (640-560))
+ 
+In file included from sdl_driver.c:15:0:
+video.h:23:0: note: this is the location of the previous definition
+ #define EFF_BORDER_WIDTH (BORDER_WIDTH + BORDER_CENTER_X)
+ 
+In file included from defc.h:15:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+defcomm.h:155:0: warning: "A2_WINDOW_WIDTH" redefined
+ #define A2_WINDOW_WIDTH  640
+ 
+In file included from sdl_driver.c:15:0:
+video.h:32:0: note: this is the location of the previous definition
+ #define A2_WINDOW_WIDTH  (640 + A2_BORDER_LEFT + A2_BORDER_RIGHT)
+ 
+In file included from defc.h:15:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+defcomm.h:156:0: warning: "A2_WINDOW_HEIGHT" redefined
+ #define A2_WINDOW_HEIGHT 400
+ 
+In file included from sdl_driver.c:15:0:
+video.h:33:0: note: this is the location of the previous definition
+ #define A2_WINDOW_HEIGHT (400 + A2_BORDER_TOP + A2_BORDER_BOTTOM)
+ 
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:90:8: error: conflicting types for ‘Pc_log’
+ STRUCT(Pc_log) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:90:8: note: previous declaration of ‘Pc_log’ was here
+ STRUCT(Pc_log) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Pc_log’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:90:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Pc_log) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:90:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Pc_log) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:100:8: error: conflicting types for ‘Data_log’
+ STRUCT(Data_log) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:100:8: note: previous declaration of ‘Data_log’ was here
+ STRUCT(Data_log) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Data_log’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:100:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Data_log) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:100:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Data_log) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:107:8: error: conflicting types for ‘Event’
+ STRUCT(Event) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:107:8: note: previous declaration of ‘Event’ was here
+ STRUCT(Event) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Event’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:107:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Event) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:107:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Event) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:113:8: error: conflicting types for ‘Fplus’
+ STRUCT(Fplus) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:113:8: note: previous declaration of ‘Fplus’ was here
+ STRUCT(Fplus) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Fplus’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:113:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Fplus) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:113:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Fplus) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:120:8: error: conflicting types for ‘Engine_reg’
+ STRUCT(Engine_reg) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:120:8: note: previous declaration of ‘Engine_reg’ was here
+ STRUCT(Engine_reg) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Engine_reg’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:120:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Engine_reg) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:120:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Engine_reg) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:136:8: error: conflicting types for ‘Kimage’
+ STRUCT(Kimage) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:136:8: note: previous declaration of ‘Kimage’ was here
+ STRUCT(Kimage) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Kimage’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:136:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Kimage) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:136:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Kimage) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:149:8: error: conflicting types for ‘Page_info’
+ STRUCT(Page_info) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:149:8: note: previous declaration of ‘Page_info’ was here
+ STRUCT(Page_info) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Page_info’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:149:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Page_info) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:149:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Page_info) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:153:8: error: conflicting types for ‘Cfg_menu’
+ STRUCT(Cfg_menu) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:153:8: note: previous declaration of ‘Cfg_menu’ was here
+ STRUCT(Cfg_menu) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Cfg_menu’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:153:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_menu) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:153:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_menu) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:161:8: error: conflicting types for ‘Cfg_dirent’
+ STRUCT(Cfg_dirent) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:161:8: note: previous declaration of ‘Cfg_dirent’ was here
+ STRUCT(Cfg_dirent) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Cfg_dirent’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:161:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_dirent) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:161:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_dirent) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:169:8: error: conflicting types for ‘Cfg_listhdr’
+ STRUCT(Cfg_listhdr) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:169:8: note: previous declaration of ‘Cfg_listhdr’ was here
+ STRUCT(Cfg_listhdr) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Cfg_listhdr’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:169:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_listhdr) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:169:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Cfg_listhdr) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:181:8: error: conflicting types for ‘Emustate_intlist’
+ STRUCT(Emustate_intlist) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:181:8: note: previous declaration of ‘Emustate_intlist’ was here
+ STRUCT(Emustate_intlist) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Emustate_intlist’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:181:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_intlist) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:181:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_intlist) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:186:8: error: conflicting types for ‘Emustate_dbllist’
+ STRUCT(Emustate_dbllist) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:186:8: note: previous declaration of ‘Emustate_dbllist’ was here
+ STRUCT(Emustate_dbllist) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Emustate_dbllist’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:186:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_dbllist) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:186:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_dbllist) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:191:8: error: conflicting types for ‘Emustate_word32list’
+ STRUCT(Emustate_word32list) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:191:8: note: previous declaration of ‘Emustate_word32list’ was here
+ STRUCT(Emustate_word32list) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Emustate_word32list’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:191:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_word32list) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+defc.h:191:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Emustate_word32list) {
+ ^~~~~~
+In file included from defc.h:314:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+iwm.h:25:22: error: conflicting types for ‘Disk’
+ typedef struct _Disk Disk;
+                      ^~~~
+In file included from defc.h:314:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+iwm.h:25:22: note: previous declaration of ‘Disk’ was here
+ typedef struct _Disk Disk;
+                      ^~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+iwm.h:27:8: error: conflicting types for ‘Trk’
+ STRUCT(Trk) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+iwm.h:27:8: note: previous declaration of ‘Trk’ was here
+ STRUCT(Trk) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Trk’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:27:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Trk) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:27:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Trk) {
+ ^~~~~~
+In file included from defc.h:314:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+iwm.h:37:8: error: redefinition of ‘struct _Disk’
+ struct _Disk {
+        ^~~~~
+In file included from defc.h:314:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+iwm.h:37:8: note: originally defined here
+ struct _Disk {
+        ^~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+iwm.h:63:8: error: conflicting types for ‘Iwm’
+ STRUCT(Iwm) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+iwm.h:63:8: note: previous declaration of ‘Iwm’ was here
+ STRUCT(Iwm) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Iwm’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:63:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Iwm) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:63:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Iwm) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+iwm.h:86:8: error: conflicting types for ‘Driver_desc’
+ STRUCT(Driver_desc) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+iwm.h:86:8: note: previous declaration of ‘Driver_desc’ was here
+ STRUCT(Driver_desc) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Driver_desc’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:86:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Driver_desc) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:86:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Driver_desc) {
+ ^~~~~~
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+iwm.h:96:8: error: conflicting types for ‘Part_map’
+ STRUCT(Part_map) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+iwm.h:96:8: note: previous declaration of ‘Part_map’ was here
+ STRUCT(Part_map) {
+        ^
+defc.h:17:41: note: in definition of macro ‘STRUCT’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                         ^
+In file included from adb.h:13:0,
+                 from sdl_driver.c:16:
+defc.h:17:51: error: redefinition of ‘struct _Part_map’
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:96:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Part_map) {
+ ^~~~~~
+In file included from videodriver.h:3:0,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+defc.h:17:51: note: originally defined here
+ #define STRUCT(a) typedef struct _ ## a a; struct _ ## a
+                                                   ^
+iwm.h:96:1: note: in expansion of macro ‘STRUCT’
+ STRUCT(Part_map) {
+ ^~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:33:6: error: conflicting types for ‘x_push_kimage’
+ void x_push_kimage(Kimage *kimage_ptr, int destx, int desty, int srcx, int srcy, int width, int height);
+      ^~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:33:6: note: previous declaration of ‘x_push_kimage’ was here
+ void x_push_kimage(Kimage *kimage_ptr, int destx, int desty, int srcx, int srcy, int width, int height);
+      ^~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:36:6: error: conflicting types for ‘x_get_kimage’
+ void x_get_kimage(Kimage *kimage_ptr);
+      ^~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:36:6: note: previous declaration of ‘x_get_kimage’ was here
+ void x_get_kimage(Kimage *kimage_ptr);
+      ^~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:61:5: error: conflicting types for ‘enter_engine’
+ int enter_engine(Engine_reg *ptr);
+     ^~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:61:5: note: previous declaration of ‘enter_engine’ was here
+ int enter_engine(Engine_reg *ptr);
+     ^~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:146:6: error: conflicting types for ‘config_init_menus’
+ void config_init_menus(Cfg_menu *menuptr);
+      ^~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:146:6: note: previous declaration of ‘config_init_menus’ was here
+ void config_init_menus(Cfg_menu *menuptr);
+      ^~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:156:7: error: conflicting types for ‘cfg_get_dsk_from_slot_drive’
+ Disk *cfg_get_dsk_from_slot_drive(int slot, int drive);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:156:7: note: previous declaration of ‘cfg_get_dsk_from_slot_drive’ was here
+ Disk *cfg_get_dsk_from_slot_drive(int slot, int drive);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:157:6: error: conflicting types for ‘config_generate_config_kegs_name’
+ void config_generate_config_kegs_name(char *outstr, int maxlen, Disk *dsk, int with_extras);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:157:6: note: previous declaration of ‘config_generate_config_kegs_name’ was here
+ void config_generate_config_kegs_name(char *outstr, int maxlen, Disk *dsk, int with_extras);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:160:6: error: conflicting types for ‘eject_named_disk’
+ void eject_named_disk(Disk *dsk, const char *name, const char *partition_name);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:160:6: note: previous declaration of ‘eject_named_disk’ was here
+ void eject_named_disk(Disk *dsk, const char *name, const char *partition_name);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:162:6: error: conflicting types for ‘eject_disk’
+ void eject_disk(Disk *dsk);
+      ^~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:162:6: note: previous declaration of ‘eject_disk’ was here
+ void eject_disk(Disk *dsk);
+      ^~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:165:5: error: conflicting types for ‘cfg_partition_find_by_name_or_num’
+ int cfg_partition_find_by_name_or_num(int fd, const char *partnamestr, int part_num, Disk *dsk);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:165:5: note: previous declaration of ‘cfg_partition_find_by_name_or_num’ was here
+ int cfg_partition_find_by_name_or_num(int fd, const char *partnamestr, int part_num, Disk *dsk);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:176:6: error: conflicting types for ‘cfg_parse_menu’
+ void cfg_parse_menu(Cfg_menu *menuptr, int menu_pos, int highlight_pos, int change);
+      ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:176:6: note: previous declaration of ‘cfg_parse_menu’ was here
+ void cfg_parse_menu(Cfg_menu *menuptr, int menu_pos, int highlight_pos, int change);
+      ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:179:6: error: conflicting types for ‘cfg_free_alldirents’
+ void cfg_free_alldirents(Cfg_listhdr *listhdrptr);
+      ^~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:179:6: note: previous declaration of ‘cfg_free_alldirents’ was here
+ void cfg_free_alldirents(Cfg_listhdr *listhdrptr);
+      ^~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:180:6: error: conflicting types for ‘cfg_file_add_dirent’
+ void cfg_file_add_dirent(Cfg_listhdr *listhdrptr, const char *nameptr, int is_dir, int size, int image_start, int part_num);
+      ^~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:180:6: note: previous declaration of ‘cfg_file_add_dirent’ was here
+ void cfg_file_add_dirent(Cfg_listhdr *listhdrptr, const char *nameptr, int is_dir, int size, int image_start, int part_num);
+      ^~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:185:6: error: conflicting types for ‘cfg_fix_topent’
+ void cfg_fix_topent(Cfg_listhdr *listhdrptr);
+      ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:185:6: note: previous declaration of ‘cfg_fix_topent’ was here
+ void cfg_fix_topent(Cfg_listhdr *listhdrptr);
+      ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:284:6: error: conflicting types for ‘iwm_init_drive’
+ void iwm_init_drive(Disk *dsk, int smartport, int drive, int disk_525);
+      ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:284:6: note: previous declaration of ‘iwm_init_drive’ was here
+ void iwm_init_drive(Disk *dsk, int smartport, int drive, int disk_525);
+      ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:285:6: error: conflicting types for ‘disk_set_num_tracks’
+ void disk_set_num_tracks(Disk *dsk, int num_tracks);
+      ^~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:285:6: note: previous declaration of ‘disk_set_num_tracks’ was here
+ void disk_set_num_tracks(Disk *dsk, int num_tracks);
+      ^~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:289:6: error: conflicting types for ‘iwm_flush_disk_to_unix’
+ void iwm_flush_disk_to_unix(Disk *dsk);
+      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:289:6: note: previous declaration of ‘iwm_flush_disk_to_unix’ was here
+ void iwm_flush_disk_to_unix(Disk *dsk);
+      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:293:6: error: conflicting types for ‘iwm_move_to_track’
+ void iwm_move_to_track(Disk *dsk, int new_track);
+      ^~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:293:6: note: previous declaration of ‘iwm_move_to_track’ was here
+ void iwm_move_to_track(Disk *dsk, int new_track);
+      ^~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:303:5: error: conflicting types for ‘iwm_read_data’
+ int iwm_read_data(Disk *dsk, int fast_disk_emul, double dcycs);
+     ^~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:303:5: note: previous declaration of ‘iwm_read_data’ was here
+ int iwm_read_data(Disk *dsk, int fast_disk_emul, double dcycs);
+     ^~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:304:6: error: conflicting types for ‘iwm_write_data’
+ void iwm_write_data(Disk *dsk, word32 val, int fast_disk_emul, double dcycs);
+      ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:304:6: note: previous declaration of ‘iwm_write_data’ was here
+ void iwm_write_data(Disk *dsk, word32 val, int fast_disk_emul, double dcycs);
+      ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:306:5: error: conflicting types for ‘disk_unnib_4x4’
+ int disk_unnib_4x4(Disk *dsk);
+     ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:306:5: note: previous declaration of ‘disk_unnib_4x4’ was here
+ int disk_unnib_4x4(Disk *dsk);
+     ^~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:307:5: error: conflicting types for ‘iwm_denib_track525’
+ int iwm_denib_track525(Disk *dsk, Trk *trk, int qtr_track, byte *outbuf);
+     ^~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:307:5: note: previous declaration of ‘iwm_denib_track525’ was here
+ int iwm_denib_track525(Disk *dsk, Trk *trk, int qtr_track, byte *outbuf);
+     ^~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:308:5: error: conflicting types for ‘iwm_denib_track35’
+ int iwm_denib_track35(Disk *dsk, Trk *trk, int qtr_track, byte *outbuf);
+     ^~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:308:5: note: previous declaration of ‘iwm_denib_track35’ was here
+ int iwm_denib_track35(Disk *dsk, Trk *trk, int qtr_track, byte *outbuf);
+     ^~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:309:5: error: conflicting types for ‘disk_track_to_unix’
+ int disk_track_to_unix(Disk *dsk, int qtr_track, byte *outbuf);
+     ^~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:309:5: note: previous declaration of ‘disk_track_to_unix’ was here
+ int disk_track_to_unix(Disk *dsk, int qtr_track, byte *outbuf);
+     ^~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:311:6: error: conflicting types for ‘disk_check_nibblization’
+ void disk_check_nibblization(Disk *dsk, int qtr_track, byte *buf, int size);
+      ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:311:6: note: previous declaration of ‘disk_check_nibblization’ was here
+ void disk_check_nibblization(Disk *dsk, int qtr_track, byte *buf, int size);
+      ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:312:6: error: conflicting types for ‘disk_unix_to_nib’
+ void disk_unix_to_nib(Disk *dsk, int qtr_track, int unix_pos, int unix_len, int nib_len);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:312:6: note: previous declaration of ‘disk_unix_to_nib’ was here
+ void disk_unix_to_nib(Disk *dsk, int qtr_track, int unix_pos, int unix_len, int nib_len);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:313:6: error: conflicting types for ‘iwm_nibblize_track_nib525’
+ void iwm_nibblize_track_nib525(Disk *dsk, Trk *trk, byte *track_buf, int qtr_track);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:313:6: note: previous declaration of ‘iwm_nibblize_track_nib525’ was here
+ void iwm_nibblize_track_nib525(Disk *dsk, Trk *trk, byte *track_buf, int qtr_track);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:314:6: error: conflicting types for ‘iwm_nibblize_track_525’
+ void iwm_nibblize_track_525(Disk *dsk, Trk *trk, byte *track_buf, int qtr_track);
+      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:314:6: note: previous declaration of ‘iwm_nibblize_track_525’ was here
+ void iwm_nibblize_track_525(Disk *dsk, Trk *trk, byte *track_buf, int qtr_track);
+      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:315:6: error: conflicting types for ‘iwm_nibblize_track_35’
+ void iwm_nibblize_track_35(Disk *dsk, Trk *trk, byte *track_buf, int qtr_track);
+      ^~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:315:6: note: previous declaration of ‘iwm_nibblize_track_35’ was here
+ void iwm_nibblize_track_35(Disk *dsk, Trk *trk, byte *track_buf, int qtr_track);
+      ^~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:316:6: error: conflicting types for ‘disk_4x4_nib_out’
+ void disk_4x4_nib_out(Disk *dsk, word32 val);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:316:6: note: previous declaration of ‘disk_4x4_nib_out’ was here
+ void disk_4x4_nib_out(Disk *dsk, word32 val);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:317:6: error: conflicting types for ‘disk_nib_out’
+ void disk_nib_out(Disk *dsk, byte val, int size);
+      ^~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:317:6: note: previous declaration of ‘disk_nib_out’ was here
+ void disk_nib_out(Disk *dsk, byte val, int size);
+      ^~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:318:6: error: conflicting types for ‘disk_nib_end_track’
+ void disk_nib_end_track(Disk *dsk);
+      ^~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:318:6: note: previous declaration of ‘disk_nib_end_track’ was here
+ void disk_nib_end_track(Disk *dsk);
+      ^~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:320:6: error: conflicting types for ‘iwm_show_a_track’
+ void iwm_show_a_track(Trk *trk);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:320:6: note: previous declaration of ‘iwm_show_a_track’ was here
+ void iwm_show_a_track(Trk *trk);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:378:6: error: conflicting types for ‘show_regs_act’
+ void show_regs_act(Engine_reg *eptr);
+      ^~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:378:6: note: previous declaration of ‘show_regs_act’ was here
+ void show_regs_act(Engine_reg *eptr);
+      ^~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:495:6: error: conflicting types for ‘video_border_pixel_write’
+ void video_border_pixel_write(Kimage *kimage_ptr, int starty, int num_lines, word32 val, int st_off, int end_off);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:495:6: note: previous declaration of ‘video_border_pixel_write’ was here
+ void video_border_pixel_write(Kimage *kimage_ptr, int starty, int num_lines, word32 val, int st_off, int end_off);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:516:6: error: conflicting types for ‘video_get_kimage’
+ void video_get_kimage(Kimage *kimage_ptr, int extend_info, int depth, int mdepth);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:516:6: note: previous declaration of ‘video_get_kimage’ was here
+ void video_get_kimage(Kimage *kimage_ptr, int extend_info, int depth, int mdepth);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:518:6: error: conflicting types for ‘video_convert_kimage_depth’
+ void video_convert_kimage_depth(Kimage *kim_in, Kimage *kim_out, int startx, int starty, int width, int height);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:518:6: note: previous declaration of ‘video_convert_kimage_depth’ was here
+ void video_convert_kimage_depth(Kimage *kim_in, Kimage *kim_out, int startx, int starty, int width, int height);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from adb.h:13,
+                 from sdl_driver.c:16:
+protos.h:519:6: error: conflicting types for ‘video_push_lines’
+ void video_push_lines(Kimage *kimage_ptr, int start_line, int end_line, int left_pix, int right_pix);
+      ^~~~~~~~~~~~~~~~
+In file included from defc.h:315:0,
+                 from videodriver.h:3,
+                 from video.h:4,
+                 from sdl_driver.c:15:
+protos.h:519:6: note: previous declaration of ‘video_push_lines’ was here
+ void video_push_lines(Kimage *kimage_ptr, int start_line, int end_line, int left_pix, int right_pix);
+      ^~~~~~~~~~~~~~~~
+Makefile:89: recipe for target 'sdl_driver.o' failed
+make: *** [sdl_driver.o] Error 1

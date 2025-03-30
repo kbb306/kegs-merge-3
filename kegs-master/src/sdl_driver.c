@@ -10,8 +10,8 @@
 #endif
 
 #include "defc.h"
-#include "sim65816.h"
-#include "engine.h"
+//#include "sim65816.h"
+//#include "engine.h"
 #include "video.h"
 #include "adb.h"
 #include "sound.h"
@@ -28,6 +28,9 @@ static void handle_key(int keycode, int pressed) {
     }
 }
 #endif
+void engine_init(int argc, char **argv);
+void engine_execute(void);
+void engine_shutdown(void);
 
 int main(int argc, char *argv[]) {
 #ifdef USE_SDL
