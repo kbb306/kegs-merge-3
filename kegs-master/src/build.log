@@ -1,229 +1,149 @@
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. adb.c
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. clock.c
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. config.c
+config.c: In function ‘cfg_stat’:
+config.c:1692:6: warning: variable ‘len’ set but not used [-Wunused-but-set-variable]
+  int len;
+      ^~~
+config.c:1691:6: warning: variable ‘removed_slash’ set but not used [-Wunused-but-set-variable]
+  int removed_slash;
+      ^~~~~~~~~~~~~
+config.c: In function ‘config_control_panel’:
+config.c:2849:9: warning: variable ‘j’ set but not used [-Wunused-but-set-variable]
+  int i, j;
+         ^
+config.c: In function ‘config_parse_config_kegs_file’:
+config.c:804:2: warning: ignoring return value of ‘getcwd’, declared with attribute warn_unused_result [-Wunused-result]
+  (void)getcwd(&g_cfg_cwd_str[0], CFG_PATH_MAX);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+config.c:845:5: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+   if((pos + 4) > len || buf[pos] != 's' || buf[pos+2] != 'd' ||
+     ^
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. dis.c
+dis.c: In function ‘do_step’:
+dis.c:600:6: warning: variable ‘size’ set but not used [-Wunused-but-set-variable]
+  int size;
+      ^~~~
+dis.c: In function ‘do_debug_unix’:
+dis.c:796:12: warning: variable ‘save’ set but not used [-Wunused-but-set-variable]
+  int load, save;
+            ^~~~
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. engine_c.c
+engine_c.c: In function ‘get_memory16_pieces_stub’:
+engine_c.c:392:9: warning: variable ‘addr_latch’ set but not used [-Wunused-but-set-variable]
+  word32 addr_latch;
+         ^~~~~~~~~~
+engine_c.c: In function ‘get_memory24_pieces_stub’:
+engine_c.c:419:9: warning: variable ‘addr_latch’ set but not used [-Wunused-but-set-variable]
+  word32 addr_latch;
+         ^~~~~~~~~~
+engine_c.c: In function ‘get_memory_c’:
+engine_c.c:549:9: warning: variable ‘addr_latch’ set but not used [-Wunused-but-set-variable]
+  word32 addr_latch;
+         ^~~~~~~~~~
+engine_c.c: In function ‘get_remaining_operands’:
+engine_c.c:805:9: warning: variable ‘addr_latch’ set but not used [-Wunused-but-set-variable]
+  word32 addr_latch;
+         ^~~~~~~~~~
+engine_c.c: In function ‘enter_engine’:
+engine_c.c:898:10: warning: variable ‘tmp_pc_ptr’ set but not used [-Wunused-but-set-variable]
+  Pc_log *tmp_pc_ptr;
+          ^~~~~~~~~~
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. scc.c
+scc.c: In function ‘scc_add_to_readbufv’:
+scc.c:1112:6: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+  int ret, len, c;
+      ^~~
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. iwm.c
+iwm.c: In function ‘iwm_touch_switches’:
+iwm.c:359:8: warning: variable ‘dsk’ set but not used [-Wunused-but-set-variable]
+  Disk *dsk;
+        ^~~
+In file included from iwm.c:997:0:
+iwm_35_525.h: In function ‘iwm_read_data_35’:
+iwm_35_525.h:94:4: warning: assuming signed overflow does not occur when assuming that (X + c) < X is always false [-Wstrict-overflow]
+  if(cycs_passed >= (cycs_this_nib + 11)) {
+    ^
+In file included from iwm.c:1009:0:
+iwm_35_525.h: In function ‘iwm_read_data_525’:
+iwm_35_525.h:94:4: warning: assuming signed overflow does not occur when assuming that (X + c) < X is always false [-Wstrict-overflow]
+  if(cycs_passed >= (cycs_this_nib + 11)) {
+    ^
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. joystick_driver.c
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. moremem.c
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. paddles.c
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. sim65816.c
+sim65816.c: In function ‘show_pc_log’:
+sim65816.c:192:6: warning: variable ‘num’ set but not used [-Wunused-but-set-variable]
+  int num;
+      ^~~
+sim65816.c: In function ‘run_prog’:
+sim65816.c:1390:6: warning: variable ‘this_type’ set but not used [-Wunused-but-set-variable]
+  int this_type;
+      ^~~~~~~~~
+sim65816.c: In function ‘setup_kegs_file’:
+sim65816.c:1078:2: warning: ignoring return value of ‘system’, declared with attribute warn_unused_result [-Wunused-result]
+  system("pwd");
+  ^~~~~~~~~~~~~
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. smartport.c
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. sound_driver.c
+sound_driver.c: In function ‘child_sound_init_linux’:
+sound_driver.c:361:6: warning: variable ‘fragment’ set but not used [-Wunused-but-set-variable]
+  int fragment;
+      ^~~~~~~~
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. scc_socket_driver.c
+scc_socket_driver.c: In function ‘scc_socket_open_outgoing’:
+scc_socket_driver.c:189:29: warning: pointer targets in passing argument 1 of ‘gethostbyname’ differ in signedness [-Wpointer-sign]
+  hostentptr = gethostbyname(&scc_ptr->modem_cmd_str[0]);
+                             ^
+In file included from scc.h:22:0,
+                 from scc_socket_driver.c:16:
+/usr/include/netdb.h:142:24: note: expected ‘const char *’ but argument is of type ‘byte * {aka unsigned char *}’
+ extern struct hostent *gethostbyname (const char *__name);
+                        ^~~~~~~~~~~~~
+scc_socket_driver.c: In function ‘scc_accept_socket’:
+scc_socket_driver.c:347:7: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+       &(scc_ptr->host_aux1));
+       ^
+In file included from scc.h:20:0,
+                 from scc_socket_driver.c:16:
+/usr/include/i386-linux-gnu/sys/socket.h:232:12: note: expected ‘socklen_t * restrict {aka unsigned int * restrict}’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^~~~~~
+scc_socket_driver.c: In function ‘scc_socket_modem_write’:
+scc_socket_driver.c:794:6: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+  str = &(scc_ptr->modem_cmd_str[0]);
+      ^
+scc_socket_driver.c: In function ‘scc_socket_do_cmd_str’:
+scc_socket_driver.c:858:6: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+  str = &(scc_ptr->modem_cmd_str[0]);
+      ^
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. scc_windriver.c
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. scc_macdriver.c
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. sdl_driver.c
 cc -O2 -Wall -fomit-frame-pointer -march=pentium -c ../../platform_sdl/video.c -o ../../platform_sdl/video.o
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -c ../../platform_sdl/sound.c -o ../../platform_sdl/sound.o
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -c ../../platform_sdl/input.c -o ../../platform_sdl/input.o
+cc -O2 -Wall -fomit-frame-pointer -march=pentium -c ../../platform_sdl/stubs.c -o ../../platform_sdl/stubs.o
 cc -O2 -Wall -fomit-frame-pointer -march=pentium -I/usr/X11R6/include -c -DKEGS_LITTLE_ENDIAN -I. compile_time.c
-cc -O2 -Wall -fomit-frame-pointer -march=pentium  adb.o clock.o config.o dis.o engine_c.o scc.o iwm.o joystick_driver.o moremem.o paddles.o sim65816.o smartport.o sound_driver.o scc_socket_driver.o scc_windriver.o scc_macdriver.o sdl_driver.o ../../platform_sdl/video.o ../../platform_sdl/sound.o ../../platform_sdl/input.o compile_time.o  -o xkegs -L/usr/X11R6/lib `sdl-config --libs` -lX11
+cc -O2 -Wall -fomit-frame-pointer -march=pentium  adb.o clock.o config.o dis.o engine_c.o scc.o iwm.o joystick_driver.o moremem.o paddles.o sim65816.o smartport.o sound_driver.o scc_socket_driver.o scc_windriver.o scc_macdriver.o sdl_driver.o ../../platform_sdl/video.o ../../platform_sdl/sound.o ../../platform_sdl/input.o ../../platform_sdl/stubs.o compile_time.o  -o xkegs -L/usr/X11R6/lib `sdl-config --libs` -lX11
 sdl_driver.o:(.rodata+0x0): multiple definition of `a2_key_to_ascii'
 adb.o:(.rodata+0x60): first defined here
 sdl_driver.o:(.rodata+0x800): multiple definition of `rcsid_adb_h'
 adb.o:(.rodata+0x860): first defined here
-sdl_driver.o: In function `main':
-sdl_driver.c:(.text.startup+0x26): undefined reference to `engine_init'
-sdl_driver.c:(.text.startup+0x2c): undefined reference to `g_sim65816_running'
-sdl_driver.c:(.text.startup+0x41): undefined reference to `engine_execute'
-sdl_driver.c:(.text.startup+0x4c): undefined reference to `engine_shutdown'
-adb.o: In function `mouse_read_c024':
-adb.c:(.text+0x1320): undefined reference to `x_hide_pointer'
-adb.c:(.text+0x144e): undefined reference to `g_num_lines_prev_superhires'
-adb.c:(.text+0x1772): undefined reference to `x_hide_pointer'
-adb.o: In function `update_mouse':
-adb.c:(.text+0x1dcc): undefined reference to `g_num_lines_prev_superhires'
-adb.c:(.text+0x1fea): undefined reference to `g_num_lines_prev_superhires640'
-adb.c:(.text+0x20db): undefined reference to `x_hide_pointer'
 adb.o: In function `.L774':
 adb.c:(.text+0x3010): undefined reference to `x_full_screen'
-adb.o: In function `.L773':
-adb.c:(.text+0x3022): undefined reference to `g_a2vid_palette'
-adb.c:(.text+0x3031): undefined reference to `change_a2vid_palette'
-adb.o: In function `.L771':
-adb.c:(.text+0x30a2): undefined reference to `x_hide_pointer'
-config.o: In function `cfg_text_screen_dump':
-config.c:(.text+0x8f): undefined reference to `g_screen_index'
-config.o: In function `cfg_putchar.part.5':
-config.c:(.text+0x376): undefined reference to `g_screen_index'
-config.o: In function `config_control_panel':
-config.c:(.text+0x48d4): undefined reference to `g_cur_a2_stat'
-config.c:(.text+0x492c): undefined reference to `g_a2_new_all_stat'
-config.c:(.text+0x4938): undefined reference to `g_new_a2_stat_cur_line'
-config.c:(.text+0x4992): undefined reference to `g_full_refresh_needed'
-config.c:(.text+0x49ac): undefined reference to `g_a2_screen_buffer_changed'
-config.c:(.text+0x4a53): undefined reference to `x_show_alert'
-config.c:(.text+0x4cc9): undefined reference to `change_display_mode'
-config.o:(.data.rel+0xcc): undefined reference to `g_video_extra_check_inputs'
 dis.o: In function `do_debug_intfc':
-dis.c:(.text+0x1d3a): undefined reference to `x_auto_repeat_on'
 dis.c:(.text+0x1d52): undefined reference to `x_full_screen'
-dis.c:(.text+0x21c2): undefined reference to `doc_show_ensoniq_state'
-dis.c:(.text+0x2281): undefined reference to `show_a2_line_stuff'
-dis.c:(.text+0x2299): undefined reference to `show_xcolor_array'
 dis.c:(.text+0x23d1): undefined reference to `video_show_debug_info'
 engine_c.o: In function `set_memory8_io_stub':
 engine_c.c:(.text+0x5e5): undefined reference to `slow_mem_changed'
-iwm.o: In function `draw_iwm_status':
-iwm.c:(.text+0x615): undefined reference to `video_update_status_line'
-moremem.o: In function `fixup_bank0_2000_4000':
-moremem.c:(.text+0x18d): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `fixup_hires_on':
-moremem.c:(.text+0x29c): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `fixup_bank0_0400_0800':
-moremem.c:(.text+0x2d7): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `fixup_st80col':
-moremem.c:(.text+0x5c2): undefined reference to `g_cur_a2_stat'
-moremem.c:(.text+0x5ef): undefined reference to `change_display_mode'
-moremem.o: In function `fixup_page2':
-moremem.c:(.text+0x870): undefined reference to `g_cur_a2_stat'
-moremem.c:(.text+0x897): undefined reference to `change_display_mode'
-moremem.o: In function `fixup_ramrd':
-moremem.c:(.text+0x8bf): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `fixup_ramwrt':
-moremem.c:(.text+0x984): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `set_statereg':
-moremem.c:(.text+0xf22): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L513':
-moremem.c:(.text+0x1dfd): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L514':
-moremem.c:(.text+0x1e22): undefined reference to `g_cur_a2_stat'
-moremem.o:moremem.c:(.text+0x1efb): more undefined references to `g_cur_a2_stat' follow
-moremem.o: In function `.L526':
-moremem.c:(.text+0x1f19): undefined reference to `change_display_mode'
-moremem.o: In function `.L527':
-moremem.c:(.text+0x1f27): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L528':
-moremem.c:(.text+0x1f3c): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L529':
-moremem.c:(.text+0x1f56): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L532':
-moremem.c:(.text+0x1f7f): undefined reference to `g_cur_a2_stat'
-moremem.c:(.text+0x1fa0): undefined reference to `change_display_mode'
-moremem.o: In function `.L533':
-moremem.c:(.text+0x1fae): undefined reference to `g_cur_a2_stat'
-moremem.c:(.text+0x1fdb): undefined reference to `change_display_mode'
-moremem.o: In function `.L575':
-moremem.c:(.text+0x2092): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L538':
-moremem.c:(.text+0x20c2): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L541':
-moremem.c:(.text+0x214a): undefined reference to `doc_read_c030'
 moremem.o: In function `.L545':
 moremem.c:(.text+0x22c2): undefined reference to `change_border_color'
-moremem.o: In function `.L574':
-moremem.c:(.text+0x238e): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L552':
-moremem.c:(.text+0x2401): undefined reference to `doc_write_c03c'
-moremem.o: In function `.L553':
-moremem.c:(.text+0x2415): undefined reference to `doc_write_c03d'
-moremem.o: In function `.L562':
-moremem.c:(.text+0x252e): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L563':
-moremem.c:(.text+0x2546): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L566':
-moremem.c:(.text+0x2582): undefined reference to `g_cur_a2_stat'
-moremem.c:(.text+0x25a9): undefined reference to `change_display_mode'
-moremem.o: In function `.L567':
-moremem.c:(.text+0x25b7): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L560':
-moremem.c:(.text+0x268e): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L561':
-moremem.c:(.text+0x26a6): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L771':
-moremem.c:(.text+0x2b3a): undefined reference to `float_bus'
-moremem.o: In function `.L841':
-moremem.c:(.text+0x2ca4): undefined reference to `g_cur_a2_stat'
-moremem.c:(.text+0x2cc7): undefined reference to `change_display_mode'
-moremem.o: In function `.L840':
-moremem.c:(.text+0x2ce6): undefined reference to `g_cur_a2_stat'
-moremem.c:(.text+0x2d01): undefined reference to `change_display_mode'
-moremem.o: In function `.L833':
-moremem.c:(.text+0x2e12): undefined reference to `g_cur_a2_stat'
-moremem.c:(.text+0x2e3e): undefined reference to `change_display_mode'
-moremem.o: In function `.L793':
-moremem.c:(.text+0x2e52): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L792':
-moremem.c:(.text+0x2e69): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L791':
-moremem.c:(.text+0x2e80): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L796':
-moremem.c:(.text+0x2eb6): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L795':
-moremem.c:(.text+0x2ecd): undefined reference to `g_cur_a2_stat'
-moremem.o:moremem.c:(.text+0x2f73): more undefined references to `g_cur_a2_stat' follow
-moremem.o: In function `.L831':
-moremem.c:(.text+0x311a): undefined reference to `float_bus'
-moremem.o: In function `.L829':
-moremem.c:(.text+0x3134): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L828':
-moremem.c:(.text+0x3151): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L827':
-moremem.c:(.text+0x316e): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L826':
-moremem.c:(.text+0x318b): undefined reference to `g_cur_a2_stat'
-moremem.o: In function `.L818':
-moremem.c:(.text+0x324d): undefined reference to `doc_read_c03d'
-moremem.o: In function `.L817':
-moremem.c:(.text+0x3260): undefined reference to `doc_read_c03c'
-moremem.o: In function `.L807':
-moremem.c:(.text+0x3331): undefined reference to `doc_read_c030'
-moremem.o:(.data.rel+0x44): undefined reference to `g_cur_a2_stat'
 sim65816.o: In function `get_memory_io':
 sim65816.c:(.text+0x642): undefined reference to `doc_ram'
 sim65816.o: In function `set_memory_io':
 sim65816.c:(.text+0x752): undefined reference to `doc_ram'
-sim65816.o: In function `my_exit':
-sim65816.c:(.text+0x820): undefined reference to `end_screen'
-sim65816.o: In function `do_reset':
-sim65816.c:(.text+0x8ec): undefined reference to `video_reset'
-sim65816.c:(.text+0x910): undefined reference to `sound_reset'
-sim65816.c:(.text+0x92a): undefined reference to `change_display_mode'
-sim65816.o: In function `kegsmain':
-sim65816.c:(.text+0xf5e): undefined reference to `g_cur_a2_stat'
-sim65816.c:(.text+0xf68): undefined reference to `g_use_bw_hires'
-sim65816.c:(.text+0x12e5): undefined reference to `g_screen_redraw_skip_amt'
-sim65816.c:(.text+0x14a1): undefined reference to `g_audio_enable'
-sim65816.c:(.text+0x1642): undefined reference to `g_use_shmem'
-sim65816.c:(.text+0x1665): undefined reference to `g_use_dhr140'
-sim65816.o: In function `remove_event_entry':
-sim65816.c:(.text+0x194a): undefined reference to `g_doc_saved_ctl'
-sim65816.o: In function `update_60hz':
-sim65816.c:(.text+0x1ff8): undefined reference to `g_a2vid_palette'
-sim65816.c:(.text+0x2001): undefined reference to `g_doc_vol'
-sim65816.c:(.text+0x2040): undefined reference to `video_update_status_line'
-sim65816.c:(.text+0x20b8): undefined reference to `g_cycs_in_refresh_ximage'
-sim65816.c:(.text+0x20ce): undefined reference to `g_cycs_in_refresh_line'
-sim65816.c:(.text+0x20ea): undefined reference to `g_cycs_in_check_input'
-sim65816.c:(.text+0x210a): undefined reference to `g_refresh_bytes_xfer'
-sim65816.c:(.text+0x2149): undefined reference to `video_update_status_line'
-sim65816.c:(.text+0x21ab): undefined reference to `video_update_status_line'
-sim65816.c:(.text+0x21b1): undefined reference to `g_fvoices'
-sim65816.c:(.text+0x21c0): undefined reference to `g_cycs_in_est_sound'
-sim65816.c:(.text+0x21e6): undefined reference to `g_cycs_in_start_sound'
-sim65816.c:(.text+0x21fe): undefined reference to `g_cycs_in_sound3'
-sim65816.c:(.text+0x221c): undefined reference to `g_cycs_in_sound2'
-sim65816.c:(.text+0x224c): undefined reference to `g_cycs_in_sound1'
-sim65816.c:(.text+0x2282): undefined reference to `video_update_status_line'
-sim65816.c:(.text+0x22c0): undefined reference to `g_num_recalc_snd_parms'
-sim65816.c:(.text+0x22c9): undefined reference to `g_num_start_sounds'
-sim65816.c:(.text+0x22d0): undefined reference to `g_num_doc_events'
-sim65816.c:(.text+0x22e1): undefined reference to `g_num_snd_plays'
-sim65816.c:(.text+0x230b): undefined reference to `video_update_status_line'
-sim65816.c:(.text+0x2342): undefined reference to `video_update_status_line'
-sim65816.c:(.text+0x2356): undefined reference to `g_status_refresh_needed'
-sim65816.c:(.text+0x2376): undefined reference to `g_cycs_in_40col'
-sim65816.c:(.text+0x238c): undefined reference to `g_cycs_in_xredraw'
-sim65816.c:(.text+0x23b8): undefined reference to `g_cycs_in_sound4'
-sim65816.c:(.text+0x243a): undefined reference to `g_num_scan_osc'
-sim65816.c:(.text+0x265b): undefined reference to `g_cur_a2_stat'
-sim65816.c:(.text+0x26b2): undefined reference to `sound_update'
-sim65816.o: In function `do_scan_int':
-sim65816.c:(.text+0x2c82): undefined reference to `g_cur_a2_stat'
-sim65816.o: In function `check_scan_line_int':
-sim65816.c:(.text+0x2d71): undefined reference to `g_cur_a2_stat'
-sim65816.o: In function `check_for_new_scan_int':
-sim65816.c:(.text+0x2dc0): undefined reference to `g_cur_a2_stat'
-sim65816.o: In function `.L589':
-sim65816.c:(.text+0x3442): undefined reference to `video_update_event_line'
-sim65816.c:(.text+0x34ac): undefined reference to `x_auto_repeat_on'
-sim65816.o: In function `.L586':
-sim65816.c:(.text+0x350f): undefined reference to `doc_handle_event'
-sim65816.o: In function `setup_kegs_file':
-sim65816.c:(.text+0x3b8b): undefined reference to `x_show_alert'
-sim65816.c:(.text+0x3bbe): undefined reference to `x_dialog_create_kegs_conf'
-sound_driver.o: In function `child_sound_playit':
-sound_driver.c:(.text+0x18a): undefined reference to `g_audio_rate'
-sound_driver.c:(.text+0x1fa): undefined reference to `g_audio_rate'
-sound_driver.o: In function `child_sound_init_linux':
-sound_driver.c:(.text+0x420): undefined reference to `g_audio_rate'
-sound_driver.o: In function `child_sound_loop':
-sound_driver.c:(.text+0x533): undefined reference to `g_audio_rate'
-scc_socket_driver.o: In function `scc_socket_open_outgoing':
-scc_socket_driver.c:(.text+0x1191): undefined reference to `x_show_alert'
 collect2: error: ld returned 1 exit status
 Makefile:43: recipe for target 'xkegs' failed
 make: *** [xkegs] Error 1

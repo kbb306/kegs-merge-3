@@ -47,4 +47,21 @@ int g_sim65816_running = 1;
 void engine_init(int argc, char **argv) {}
 void engine_execute(void) {}
 void engine_shutdown(void) {}
+int g_num_lines_prev_superhires = 0;
+int g_num_lines_prev_superhires640 = 0;
+int g_video_extra_check_inputs = 0;
+
+int g_screen_redraw_skip_amt = 0;
+int g_doc_vol = 0;
+int g_a2_new_all_stat = 0;
+int g_new_a2_stat_cur_line = 0;
+int g_num_scan_osc = 0;
+
+int g_cur_a2_stat = 0;
+int g_a2vid_palette = 0;
+int g_doc_saved_ctl = 0;
+int g_fvoices = 0;
+
+void change_a2vid_palette() {}
+void sound_update() {}
 

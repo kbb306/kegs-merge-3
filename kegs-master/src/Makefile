@@ -127,3 +127,6 @@ win32snd_driver.o: win32snd_driver.c defc.h defcomm.h iwm.h protos.h sound.h
 ../../platform_sdl/%.o: ../../platform_sdl/%.c
 	$(CC) $(CCOPTS) -c $< -o $@
 
+clean:
+	rm -f *.o ../../platform_sdl/*.o xkegs
+

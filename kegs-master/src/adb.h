@@ -8,12 +8,12 @@
 /*	You may contact the author at: kadickey@alumni.princeton.edu	*/
 /************************************************************************/
 
-const char rcsid_adb_h[] = "@(#)$KmKId: adb.h,v 1.11 2004-10-13 23:30:33-04 kentd Exp $";
+extern const char rcsid_adb_h[] = "@(#)$KmKId: adb.h,v 1.11 2004-10-13 23:30:33-04 kentd Exp $";
 
 #include "defc.h"
 
 /* Format: a2code, ascii if no shift, ascii if shift, ascii if ctl */
-const int a2_key_to_ascii[][4] = {
+extern const int a2_key_to_ascii[][4] = {
 	{ 0x00,	'a',	'A',	0x01 },
 	{ 0x01,	's',	'S',	0x13 },
 	{ 0x02,	'd',	'D',	0x04 },
