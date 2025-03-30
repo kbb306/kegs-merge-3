@@ -1,10 +1,15 @@
 #include <SDL/SDL.h>
 #include "video_backend.h"
-#include "video.h"
+//#include "video.h"
 
 static SDL_Surface *screen = NULL;
 static int window_width = 640;
 static int window_height = 480;
+typedef struct {
+    uint8_t *data_ptr;
+} Kimage;
+
+extern Kimage g_mainwin_kimage;
 
 uint32_t* video_get_framebuffer() {
     return (uint32_t*)g_mainwin_kimage.data_ptr;

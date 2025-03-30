@@ -12,7 +12,7 @@
 #include "defc.h"
 //#include "sim65816.h"
 //#include "engine.h"
-#include "video.h"
+//#include "video.h"
 #include "adb.h"
 #include "sound.h"
 
@@ -31,6 +31,11 @@ static void handle_key(int keycode, int pressed) {
 void engine_init(int argc, char **argv);
 void engine_execute(void);
 void engine_shutdown(void);
+typedef struct {
+    uint8_t *data_ptr;
+} Kimage;
+
+extern Kimage g_mainwin_kimage;
 
 int main(int argc, char *argv[]) {
 #ifdef USE_SDL
