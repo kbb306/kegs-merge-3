@@ -13,7 +13,7 @@ const char rcsid_adb_c[] = "@(#)$KmKId: adb.c,v 1.73 2004-11-14 14:05:33-05 kent
 /* adb_mode bit 3 and bit 2 (faster repeats for arrows and space/del) not done*/
 
 #include "adb.h"
-extern const int a2_key_to_ascii[][4] = {
+const int a2_key_to_ascii[][4] = {
 	{ 0x00,	'a',	'A',	0x01 },
 	{ 0x01,	's',	'S',	0x13 },
 	{ 0x02,	'd',	'D',	0x04 },

@@ -13,4 +13,4 @@ extern const char rcsid_adb_h[];
 #include "defc.h"
 
 /* Format: a2code, ascii if no shift, ascii if shift, ascii if ctl */
-extern const int a2_key_to_ascii[];
+extern const int a2_key_to_ascii[][4];
