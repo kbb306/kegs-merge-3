@@ -1,3 +1,4 @@
+#include <stdint.h>
 void x_hide_pointer() {}
 void x_auto_repeat_on() {}
 void x_show_alert(const char *s) {}
@@ -65,3 +66,13 @@ int g_fvoices = 0;
 void change_a2vid_palette() {}
 void sound_update() {}
 
+//int a2_key_to_ascii[256]; // only if it’s NOT already in adb.c (check first)
+const char rcsid_adb_h[] = "sdl";
+
+void x_full_screen() {}
+void video_show_debug_info() {}
+void slow_mem_changed() {}
+
+uint8_t doc_ram[65536];  // simulated DOC RAM
+
+void change_border_color() {}
