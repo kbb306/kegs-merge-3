@@ -218,7 +218,9 @@ draw_iwm_status(int line, char *buf)
 		iwm.drive35[1].cur_qtr_track & 1, flag[1][1],
 		g_fast_disk_emul, g_slow_525_emul_wr, g_c036_val_speed);
 
+#ifndef USE_SDL
 	video_update_status_line(line, buf);
+#endif
 }
 
 

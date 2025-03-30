@@ -9,12 +9,13 @@
 #include "../../platform_sdl/input_backend.h"
 #endif
 
-#include "defc.h"
+//#include "defc.h"
 //#include "sim65816.h"
 //#include "engine.h"
 //#include "video.h"
 #include "adb.h"
 #include "sound.h"
+extern Kimage g_mainwin_kimage;
 
 extern int g_sim65816_running;
 extern uint32_t *video_get_framebuffer();
@@ -31,9 +32,6 @@ static void handle_key(int keycode, int pressed) {
 void engine_init(int argc, char **argv);
 void engine_execute(void);
 void engine_shutdown(void);
-typedef struct {
-    uint8_t *data_ptr;
-} Kimage;
 
 extern Kimage g_mainwin_kimage;
 

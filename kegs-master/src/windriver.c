@@ -658,6 +658,7 @@ x_auto_repeat_off(int must)
 }
 
 void
+#ifndef USE_SDL
 x_hide_pointer(int do_hide)
 {
 	if(do_hide) {

@@ -2,17 +2,20 @@
 TARGET = xkegs
 ifdef USE_SDL
 
-# SDL backend objects
-OBJECTS = $(OBJECTS1) sdl_driver.o ../platform_sdl/video.o ../platform_sdl/sound.o ../platform_sdl/input.o
+# SDL-only backend: exclude native video/sound
+OBJECTS = $(filter-out video.o sound.o,$(OBJECTS1)) \
+		sdl_driver.o \
+		../../platform_sdl/video.o \
+		../../platform_sdl/sound.o \
+		../../platform_sdl/input.o
+		../../platform_sdl/stubs.o
 CCOPTS += -DUSE_SDL `sdl-config --cflags`
 EXTRA_LIBS += `sdl-config --libs`
 
 else
-
-# Default backend (X11, etc.)
 OBJECTS = $(OBJECTS1) xdriver.o
-
 endif
+
 
 CC = cc
 CCOPTS = -O2 -Wall -fomit-frame-pointer -march=pentium
@@ -22,7 +25,12 @@ NAME = xkegs
 LDFLAGS =
 LDOPTS =
 LD = $(CC)
+ifdef USE_SDL
+EXTRA_LIBS = `sdl-config --libs`
+else
 EXTRA_LIBS = -lXext
+endif
+
 EXTRA_SPECIALS =
 
 AS = cc

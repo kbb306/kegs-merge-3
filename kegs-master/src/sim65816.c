@@ -631,7 +631,9 @@ do_reset()
 	scc_reset();
 	sound_reset(g_cur_dcycs);
 	setup_pageinfo();
+#ifndef USE_SDL
 	change_display_mode(g_cur_dcycs);
+#endif
 
 	g_irq_pending = 0;
 
@@ -1857,7 +1859,9 @@ update_60hz(double dcycs, double dtime_now)
 			dcycs/(1000.0*1000.0), sim_mhz_ptr, total_mhz_ptr,
 			dtime_diff_1sec, g_doc_vol, g_a2vid_palette,
 			sp_str);
+#ifndef USE_SDL
 		video_update_status_line(0, status_buf);
+#endif
 
 		if(g_video_line_update_interval == 0) {
 			if(g_sim_mhz > 12.0) {
@@ -1883,7 +1887,9 @@ update_60hz(double dcycs, double dtime_now)
 			"ch_in:%4.1f%% ref_l:%4.1f%% ref_x:%4.1f%%",
 			g_refresh_bytes_xfer, g_dnatcycs_1sec/(1000.0*1000.0),
 			g_line_ref_amt, dtmp2, dtmp3, dtmp4);
+#ifndef USE_SDL
 		video_update_status_line(1, status_buf);
+#endif
 
 		sprintf(status_buf, "Ints:%3d I/O:%4dK BRK:%3d COP:%2d "
 			"Eng:%3d act:%3d hev:%3d esi:%3d edi:%3d",
@@ -1891,7 +1897,9 @@ update_60hz(double dcycs, double dtime_now)
 			g_num_enter_engine, g_engine_action,
 			g_engine_halt_event, g_engine_scan_int,
 			g_engine_doc_int);
+#ifndef USE_SDL
 		video_update_status_line(2, status_buf);
+#endif
 
 		dtmp1 = (double)(g_cycs_in_sound1) / dnatcycs_1sec;
 		dtmp2 = (double)(g_cycs_in_sound2) / dnatcycs_1sec;
@@ -1901,7 +1909,9 @@ update_60hz(double dcycs, double dtime_now)
 		sprintf(status_buf, "snd1:%4.1f%%, 2:%4.1f%%, "
 			"3:%4.1f%%, st:%4.1f%% est:%4.1f%% %4.2f",
 			dtmp1, dtmp2, dtmp3, dtmp4, dtmp5, g_fvoices);
+#ifndef USE_SDL
 		video_update_status_line(3, status_buf);
+#endif
 
 		code_str1 = "";
 		code_str2 = "";
@@ -1917,14 +1927,18 @@ update_60hz(double dcycs, double dtime_now)
 			"snd_parms: %4d %s",
 			g_num_snd_plays, g_num_doc_events, g_num_start_sounds,
 			g_num_recalc_snd_parms, code_str1);
+#ifndef USE_SDL
 		video_update_status_line(4, status_buf);
+#endif
 
 		draw_iwm_status(5, status_buf);
 
 		sprintf(status_buf, "KEGS v%-6s       "
 			"Press F4 for Config Menu    %s",
 			g_kegs_version_str, code_str2);
+#ifndef USE_SDL
 		video_update_status_line(6, status_buf);
+#endif
 
 		g_status_refresh_needed = 1;
 

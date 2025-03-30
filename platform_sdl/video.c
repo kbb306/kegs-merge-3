@@ -9,7 +9,7 @@ typedef struct {
     uint8_t *data_ptr;
 } Kimage;
 
-extern Kimage g_mainwin_kimage;
+Kimage g_mainwin_kimage;
 
 uint32_t* video_get_framebuffer() {
     return (uint32_t*)g_mainwin_kimage.data_ptr;

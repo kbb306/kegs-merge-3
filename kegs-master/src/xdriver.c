@@ -1115,6 +1115,7 @@ check_input_events()
 }
 
 void
+#ifndef USE_SDL
 x_hide_pointer(int do_hide)
 {
 	if(do_hide) {

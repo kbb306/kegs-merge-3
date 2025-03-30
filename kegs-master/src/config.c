@@ -3048,7 +3048,9 @@ config_control_panel()
 	g_config_control_panel = 0;
 	g_adb_repeat_vbl = g_vbl_count + 60;
 	g_cur_a2_stat = g_save_cur_a2_stat;
+#ifndef USE_SDL
 	change_display_mode(g_cur_dcycs);
+#endif
 	g_full_refresh_needed = -1;
 	g_a2_screen_buffer_changed = -1;
 }

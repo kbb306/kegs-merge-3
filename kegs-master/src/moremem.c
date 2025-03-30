@@ -397,7 +397,9 @@ fixup_st80col(double dcycs)
 	}
 
 	if(cur_a2_stat & ALL_STAT_PAGE2) {
+#ifndef USE_SDL
 		change_display_mode(dcycs);
+#endif
 	}
 
 	fixup_brks();
@@ -477,7 +479,9 @@ fixup_page2(double dcycs)
 			fixup_bank0_2000_4000();
 		}
 	} else {
+#ifndef USE_SDL
 		change_display_mode(dcycs);
+#endif
 	}
 }
 
@@ -1273,25 +1277,33 @@ io_read(word32 loc, double *cyc_ptr)
 		case 0x50: /* 0xc050 */
 			if(g_cur_a2_stat & ALL_STAT_TEXT) {
 				g_cur_a2_stat &= (~ALL_STAT_TEXT);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return float_bus(dcycs);
 		case 0x51: /* 0xc051 */
 			if((g_cur_a2_stat & ALL_STAT_TEXT) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_TEXT);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return float_bus(dcycs);
 		case 0x52: /* 0xc052 */
 			if(g_cur_a2_stat & ALL_STAT_MIX_T_GR) {
 				g_cur_a2_stat &= (~ALL_STAT_MIX_T_GR);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return float_bus(dcycs);
 		case 0x53: /* 0xc053 */
 			if((g_cur_a2_stat & ALL_STAT_MIX_T_GR) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_MIX_T_GR);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return float_bus(dcycs);
 		case 0x54: /* 0xc054 */
@@ -1304,14 +1316,18 @@ io_read(word32 loc, double *cyc_ptr)
 			if(g_cur_a2_stat & ALL_STAT_HIRES) {
 				g_cur_a2_stat &= (~ALL_STAT_HIRES);
 				fixup_hires_on();
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return float_bus(dcycs);
 		case 0x57: /* 0xc057 */
 			if((g_cur_a2_stat & ALL_STAT_HIRES) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_HIRES);
 				fixup_hires_on();
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return float_bus(dcycs);
 		case 0x58: /* 0xc058 */
@@ -1361,7 +1377,9 @@ io_read(word32 loc, double *cyc_ptr)
 				halt_printf("Reading ZipGS $c05e!\n");
 			} else if(g_cur_a2_stat & ALL_STAT_ANNUNC3) {
 				g_cur_a2_stat &= (~ALL_STAT_ANNUNC3);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return 0;
 		case 0x5f: /* 0xc05f */
@@ -1369,7 +1387,9 @@ io_read(word32 loc, double *cyc_ptr)
 				halt_printf("Reading ZipGS $c05f!\n");
 			} else if((g_cur_a2_stat & ALL_STAT_ANNUNC3) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_ANNUNC3);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return 0;
 
@@ -1613,25 +1633,33 @@ io_write(word32 loc, int val, double *cyc_ptr)
 		case 0x0c: /* 0xc00c */
 			if(g_cur_a2_stat & ALL_STAT_VID80) {
 				g_cur_a2_stat &= (~ALL_STAT_VID80);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x0d: /* 0xc00d */
 			if((g_cur_a2_stat & ALL_STAT_VID80) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_VID80);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x0e: /* 0xc00e */
 			if(g_cur_a2_stat & ALL_STAT_ALTCHARSET) {
 				g_cur_a2_stat &= (~ALL_STAT_ALTCHARSET);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x0f: /* 0xc00f */
 			if((g_cur_a2_stat & ALL_STAT_ALTCHARSET) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_ALTCHARSET);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		/* 0xc010 - 0xc01f */
@@ -1650,7 +1678,9 @@ io_write(word32 loc, int val, double *cyc_ptr)
 						(31 - BIT_ALL_STAT_COLOR_C021);
 			if((g_cur_a2_stat & ALL_STAT_COLOR_C021) != new_tmp) {
 				g_cur_a2_stat ^= new_tmp;
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x22: /* 0xc022 */
@@ -1661,7 +1691,9 @@ io_write(word32 loc, int val, double *cyc_ptr)
 				g_cur_a2_stat &= ~(ALL_STAT_TEXT_COLOR |
 							ALL_STAT_BG_COLOR);
 				g_cur_a2_stat += (val << BIT_ALL_STAT_BG_COLOR);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x23: /* 0xc023 */
@@ -1706,7 +1738,9 @@ io_write(word32 loc, int val, double *cyc_ptr)
 			if(new_tmp != (g_cur_a2_stat & 0xa0)) {
 				g_cur_a2_stat = (g_cur_a2_stat & (~0xa0)) +
 					new_tmp;
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x2a: /* 0xc02a */
@@ -1898,25 +1932,33 @@ io_write(word32 loc, int val, double *cyc_ptr)
 		case 0x50: /* 0xc050 */
 			if(g_cur_a2_stat & ALL_STAT_TEXT) {
 				g_cur_a2_stat &= (~ALL_STAT_TEXT);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x51: /* 0xc051 */
 			if((g_cur_a2_stat & ALL_STAT_TEXT) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_TEXT);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x52: /* 0xc052 */
 			if(g_cur_a2_stat & ALL_STAT_MIX_T_GR) {
 				g_cur_a2_stat &= (~ALL_STAT_MIX_T_GR);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x53: /* 0xc053 */
 			if((g_cur_a2_stat & ALL_STAT_MIX_T_GR) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_MIX_T_GR);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x54: /* 0xc054 */
@@ -1929,14 +1971,18 @@ io_write(word32 loc, int val, double *cyc_ptr)
 			if(g_cur_a2_stat & ALL_STAT_HIRES) {
 				g_cur_a2_stat &= (~ALL_STAT_HIRES);
 				fixup_hires_on();
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x57: /* 0xc057 */
 			if((g_cur_a2_stat & ALL_STAT_HIRES) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_HIRES);
 				fixup_hires_on();
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x58: /* 0xc058 */
@@ -2002,7 +2048,9 @@ io_write(word32 loc, int val, double *cyc_ptr)
 				/* Zippy writes 0x80 and 0x00 here... */
 			} else if(g_cur_a2_stat & ALL_STAT_ANNUNC3) {
 				g_cur_a2_stat &= (~ALL_STAT_ANNUNC3);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 		case 0x5f: /* 0xc05f */
@@ -2010,7 +2058,9 @@ io_write(word32 loc, int val, double *cyc_ptr)
 				halt_printf("Wrote ZipGS $c05f: %02x\n", val);
 			} else if((g_cur_a2_stat & ALL_STAT_ANNUNC3) == 0) {
 				g_cur_a2_stat |= (ALL_STAT_ANNUNC3);
+#ifndef USE_SDL
 				change_display_mode(dcycs);
+#endif
 			}
 			return;
 

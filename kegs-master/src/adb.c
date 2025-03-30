@@ -1156,7 +1156,9 @@ update_mouse(int x, int y, int button_states, int buttons_valid)
 		if(g_hide_pointer && g_unhide_pointer) {
 			/* cursor has left a2 window, show it */
 			g_hide_pointer = 0;
+#ifndef USE_SDL
 			x_hide_pointer(0);
+#endif
 		}
 		if((g_num_lines_prev_superhires == 200) &&
 				(g_num_lines_prev_superhires640 == 0) &&
@@ -1334,7 +1336,9 @@ mouse_read_c024(double dcycs)
 				!g_unhide_pointer) {
 			/* if super-hires and forcing tracking, then hide */
 			g_hide_pointer = 1;
+#ifndef USE_SDL
 			x_hide_pointer(1);
+#endif
 		}
 		if(g_adb_mouse_coord == 0) {
 			/* update x coord values */
@@ -1357,7 +1361,9 @@ mouse_read_c024(double dcycs)
 	} else {
 		if(g_hide_pointer && !g_warp_pointer) {
 			g_hide_pointer = 0;
+#ifndef USE_SDL
 			x_hide_pointer(0);
+#endif
 		}
 	}
 
@@ -1724,7 +1730,9 @@ adb_physical_key_update(int a2code, int is_up)
 			g_warp_pointer = !g_warp_pointer;
 			if(g_hide_pointer != g_warp_pointer) {
 				g_hide_pointer = g_warp_pointer;
+#ifndef USE_SDL
 				x_hide_pointer(g_hide_pointer);
+#endif
 			}
 			break;
 		case 0x09: /* F9 - swap paddles */

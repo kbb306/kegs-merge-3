@@ -122,3 +122,8 @@ macdriver.o: macdriver.c defc.h defcomm.h iwm.h protos.h protos_macdriver.h
 macsnd_driver.o: macsnd_driver.c defc.h defcomm.h iwm.h protos.h sound.h
 windriver.o: windriver.c defc.h defcomm.h iwm.h protos.h protos_windriver.h winresource.h
 win32snd_driver.o: win32snd_driver.c defc.h defcomm.h iwm.h protos.h sound.h
+../../platform_sdl/%.o: ../../platform_sdl/%.c
+	$(CC) $(CCOPTS) -c $< -o $@
+../../platform_sdl/%.o: ../../platform_sdl/%.c
+	$(CC) $(CCOPTS) -c $< -o $@
+

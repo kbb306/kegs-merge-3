@@ -450,7 +450,9 @@ video_init()
 		g_dhires_convert[i] = val;
 	}
 
+#ifndef USE_SDL
 	change_display_mode(g_cur_dcycs);
+#endif
 	video_reset();
 	display_screen();
 
@@ -536,7 +538,9 @@ video_update()
 	if(g_flash_count >= 30) {
 		g_flash_count = 0;
 		g_cur_a2_stat ^= ALL_STAT_FLASH_STATE;
+#ifndef USE_SDL
 		change_display_mode(g_cur_dcycs);
+#endif
 	}
 
 
@@ -677,7 +681,9 @@ change_a2vid_palette(int new_palette)
 	g_a2vid_palette = new_palette;
 	g_cur_a2_stat = (g_cur_a2_stat & (~ALL_STAT_A2VID_PALETTE)) +
 			(new_palette << BIT_ALL_STAT_A2VID_PALETTE);
+#ifndef USE_SDL
 	change_display_mode(g_cur_dcycs);
+#endif
 
 	g_border_sides_refresh_needed = 1;
 	g_border_special_refresh_needed = 1;
@@ -734,6 +740,7 @@ check_a2vid_palette()
 }
 
 void
+#ifndef USE_SDL
 change_display_mode(double dcycs)
 {
 	int	line, tmp_line;
