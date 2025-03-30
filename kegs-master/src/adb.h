@@ -7,8 +7,8 @@
 /*	The KEGS web page is kegs.sourceforge.net			*/
 /*	You may contact the author at: kadickey@alumni.princeton.edu	*/
 /************************************************************************/
+extern const char rcsid_adb_h[];
 
-extern const char rcsid_adb_h[] = "@(#)$KmKId: adb.h,v 1.11 2004-10-13 23:30:33-04 kentd Exp $";
 
 #include "defc.h"
 
